@@ -201,10 +201,10 @@ function shuffle(sentences){
 }
 
 
-function gengshuang(n, b) {
+function HuaChunying(n, b) {
     paragraphs = Math.floor((Math.random() * 3 + 3))
     var i
-    var answer = "<b>耿爽：</b>"
+    var answer = "<b>華春塋：</b>"
     var index = Math.floor((Math.random() * head.length))
     answer += head[index]
     shuffle(sentences)
@@ -245,7 +245,7 @@ function generate() {
         s.innerHTML = lang === "sc" ? "<b>记者：</b>" + n + b + "，中方对此有何回应？" : "<b>記者：</b>" + n + b + "，中方對此有何回應？"
         document.getElementById("text").appendChild(s)
         var t = document.createElement("p")
-        t.innerHTML = gengshuang(n, b)
+        t.innerHTML = HuaChunying(n, b)
         document.getElementById("text").appendChild(t)
     }
 }
