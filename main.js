@@ -204,7 +204,7 @@ function shuffle(sentences){
 function HuaChunying(n, b) {
     paragraphs = Math.floor((Math.random() * 3 + 3))
     var i
-    var answer = "<b>華春塋：</b>"
+    var answer = "<b>華春瑩：</b>"
     var index = Math.floor((Math.random() * head.length))
     answer += head[index]
     shuffle(sentences)
